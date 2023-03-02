@@ -3,7 +3,7 @@ html {
   color: #0c2e39;
 }
 body {
-  background-image: url('../images/jungle_background.jpg');
+  background-image: url('../../itis3135/images/jungle_background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
