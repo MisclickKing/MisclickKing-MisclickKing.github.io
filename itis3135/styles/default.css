@@ -1,6 +1,6 @@
 html {
   font-family: 'Orbitron', sans-serif;
-  color: #0c2e39;
+  color: #230931;
 }
 body {
   background-image: url('../../itis3135/images/jungle_background.jpg');
@@ -10,6 +10,9 @@ body {
   margin: 0;
   padding: 0;
   background-color:#F8C8DC;
+}
+.home-body {
+  background-image: url('../../itis3135/images/jungle_background_with_flamingo.jpg');
 }
 body main {
   margin: 0x;
