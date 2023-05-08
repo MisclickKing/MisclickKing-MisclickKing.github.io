@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 || Denzel Fowler's Depressed Flamingo || First JavaScripts</title>
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <script src="scripts\defaultscripts.js"></script>
+</head> <!-- End of head-->
+<body class="home-body">
+    <header>
+        <nav>
+            <ul>
+                <li><p><strong>Denzel Fowler's Depressed Flamingo</strong></p></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+				<li><a href="introduction.html">introduction</a></li>
+				<li><a href="contract.html">contract</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">assignments</button>
+                    <div class="dropdown-content">
+                        <a href="tables.html">tables</a>
+				        <a href="forms.html">form</a>
+                        <a href="stuff/🐤_t3CK-d@Ta F1l@s.html">crappy site</a>
+                        <a href="website_evaluations.html">website evaluations</a>
+                        <a href="firstscripts.html">first JavaScripts</a>
+                        <a href="polygons.html">polygons</a>
+                    </div>
+                  </div>
+                  <li><a href="more.html">More to come...</a></li>
+            </ul>
+        </nav>
+    </header> <!-- End of header-->
+    <main>
+        <section class="page-title">
+            <h2 style="margin-top: 25px; margin-bottom: 55px;"><center>First JavaScripts</center></h2>
+        </section>
+        <section >
+            <h3 id="current-date"></h3>
+            <!-- current-date script -->
+            <script> 
+                date = new Date();
+
+                const months = ["January","February","March","April","May","June","July","August",
+                    "September","October","November","December"];
+                hour = date.getHours();
+                minute = date.getMinutes();
+                year = date.getFullYear();
+                let month = months[date.getMonth()];
+                day = date.getDate();
+                antemeridiem='';
+
+                /* Code below referenced from stackoverflow */
+                if (hour > 12) {
+                    antemeridiem = 'PM';
+                    hour -= 12;
+                } else if (hour < 12) {
+                    antemeridiem = 'AM';
+                    if (hour == 0) {
+                    hour = 12;
+                    }
+                } else {
+                    antemeridiem = 'PM';
+                }
+                /* End of referenced code */
+                document.getElementById("current-date").innerHTML = "Today is " + hour + ":" + minute + antemeridiem + " " + day + " " + month + ", " + year;
+            </script>
+        </section>
+        <section class="pushleft25">
+            <h3>How are you doing today?</h3>
+            <p>What is your name?: <input type="text" id="user_name" placeholder="Sam Tucker"></p>
+            <p>How are you feeling today?: <input type="text" id="user_mood" placeholder="happy"></p>
+            <button class="button" onclick="greetings()">Enter</button>
+            <p id="greeting"></p>
+        </section>
+        <!-- Basic function 1 -->
+        <section class="pushleft25">
+            <h3>Sum of two ints</h3>
+            <p>Number 1: <input type="number" id="int1" placeholder="1"></p>
+            <p>Number 2: <input type="number" id="int2" placeholder="2"></p>
+            <button class="button" onclick="sum()">Enter</button>
+            <p id="sum"></p>
+        </section>
+        <!-- Basic function 2 -->
+        <section class="pushleft25">
+            <h3>What is the current flamingo population?</h3>
+            <button class="button" onclick="flamignoPopulation()">Answer</button>
+            <p id="population"></p>
+        </section>
+        <!-- Basic function 3 -->
+        <section class="pushleft25">
+            <h3>Calculate total with NC tax</h3>
+            <p>Number 1: <input type="number" id="charge" placeholder="$1.23"></p>
+            <button class="button" onclick="NCtaxes()">Total</button>
+            <p id="taxes"></p>
+        </section>
+        <!-- Basic function 4 -->
+        <section class="pushleft25">
+            <h3>Mutliple two ints</h3>
+            <p>Number 1: <input type="number" id="num1" placeholder="1"></p>
+            <p>Number 2: <input type="number" id="num2" placeholder="2"></p>
+            <button class="button" onclick="multiply()">Enter</button>
+            <p id="mult"></p>
+        </section>
+        <!-- Basic function 5 -->
+        <section class="pushleft25">
+            <h3>Divide two ints</h3>
+            <p>Number 1: <input type="number" id="number1" placeholder="1"></p>
+            <p>Number 2: <input type="number" id="number2" placeholder="2"></p>
+            <button class="button" onclick="divide()">Enter</button>
+            <p id="div"></p>
+        </section>
+    </main>
+    <footer>
+        <div><center>
+            <h3>
+                <a href="https://webpages.charlotte.edu/dfowle25/" target="_blank">Personal Page</a> ||
+                <a href="https://github.com/MisclickKing" target="_blank">GitHub</a> ||
+                <a href="https://github.com/MisclickKing/MisclickKing.github.io" target="_blank">GitHub Files</a> ||
+                <a href="https://misclickking.github.io" target="_blank">GitHub Pages</a> ||
+                <a href="https://www.freecodecamp.org/Misclick_King" target="_blank">Freecodecamp</a> ||
+                <a href="https://www.codecademy.com/profiles/Misclick_King" target="_blank">Codecademy</a> ||
+                <a href="https://www.linkedin.com/in/denzel-fowler-55887b149/" target="_blank">Linkedin</a>
+            </h3>
+        </center></div>
+        <div><center>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML."/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS."/>
+            </a>                
+        </center></div>
+        <br>
+        <p>Designed by <a href="fowlertechtower.co" target="_blank">Fowler Tech Tower Co.</a> ©2023</p>
+    </footer> <!-- End of footer-->
+</body>
+</html>
