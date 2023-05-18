@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Cormorant+Upright:wght@300&family=Courgette&family=Lora&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccdbdc;
+    color: #10202F;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.navbar {
+    background-color: #161925;
+    overflow: hidden;
+    max-height: 65px;
+    width: 100%;
+}
+
+.navbar img  {
+    float: left;
+    display: inline;
+    width: 117px;
+    height: 50px;
+    margin: 8px 25px 4px 18px;
+    position: relative;
+}
+
+.navbar a {
+    float: left;
+    position: relative;
+    padding: 20px 16px 0 0;
+    color: #E69969;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    color: #9A90DA;
+}
+
+.navbar a:active {
+    color: ivory;
+}
+
+.footer {
+    margin: 100px 0 5px 0px;
+    text-indent: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(104, 13, 104);
+}
+
+.search-bar {
+    float: right;
+    height: 38px;
+    width: 100%;
+    max-width: 400px;
+    background: ivory;
+    margin: 10px 75px 0 0;
+    border-radius: 25px;
+    text-indent: 5px;
+}
+
+.home-title {
+   width: 50%;
+   margin: 175px 0 0 0;
+   float: left;
+}
+
+.home-title1, .home-title2 {
+    margin: 0 0 0 125px;
+    font-size: 70px;
+    display: inline;
+}
+
+.home-title2 {
+    margin: 0 0 0 200px;
+}
+
+.home-title-subtext {
+    margin-top: 28px;
+    text-indent: 52px;
+    font-size: 26px;
+    font-family: 'Lora', serif;
+    color: #216869;
+}
+.home-image {
+    display: inline;
+    width: 50%;
+    float: right;
+}
+
+.title-image {
+    margin: 85px 0 0 90px;
+}
+
+.title-image-figcap {
+    display: inline;
+    width: 50%;
+    float: right;
+    text-indent: 90px;
+    font-size: 1.12rem;
+}
+
+.home-p1 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    margin: 130px 200px 0 200px;
+}
+
+.nav-text {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 95px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color:rgb(104, 13, 104);
+}
+
+.nav-text a:visited {
+    text-decoration: none;
+}
+
+.nav-text a:hover {
+    color: goldenrod;
+}
+
+.nav-text a:active {
+    color:white;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 65px;
+}
+
+.gallery {
+    max-width: 500px;
+    margin: auto;
+}
+
+.gallery-tags {
+    font-size: 40px;
+    text-align: center;
+}
+
+.shop {
+    margin-left: 150px;
+    margin-bottom: 175px;
+    width: 1200px;
+    display: flex;
+}
+
+.shop div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.shop div img {
+    width: 240px;
+    height: 318px;
+}
+
+.shop figcaption{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shop p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.shop-extended {
+    width: 50%;
+    display: inline;
+}
+
+.shop-extended div img {
+    display: inline;
+    width: 480px;
+    height: 636px;
+    float: left;
+    margin-bottom: 300px;
+}
+
+.order {
+    text-align: center;
+    display: inline;
+    width: 50%;
+    float: right;
+    margin: 0 200px 300px 0;
+}
+
+.order h3 {
+    font-size: 50px;
+}
+
+.order h4 {
+    font-size: 35px;
+}
+
+.order p {
+    font-size: 30px;
+}
+
+.sign-up {
+    text-align: center;
+    margin: 150px 0 175px 0;
+}
+
+.sign-up h3 {
+    font-size: 45px;
+}
+
+.newsletter-p1 {
+    font-family: 'Lora', serif;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size: 20px;
+}
+
+.newsletter-p2 a {
+    text-decoration: none;
+    color: blue;
+}
+
+.sign-up #email {
+    border-radius: 15px;
+    width: 300px;
+    height: 30px;
+    text-indent: 10px;
+    padding-right: 84px;
+}
+
+#first-name, #last-name, #message {
+    border-radius: 15px;
+    width: 300px;
+    height: 30px;
+    text-indent: 10px;
+    padding-right: 84px;
+}
+
+#message {
+    height: 125px;
+}
+
+.sign-up li {
+    list-style-type: none;
+    margin: 10px 0 15px 0;
+}
+
+.sign-up #newsletter-submit {
+    border-radius: 15px;
+    height: 34px;
+    width: 80px;
+    background-color: rgb(147, 228, 255);
+}
+
+.sign-up #contact-submit {
+    border-radius: 15px;
+    height: 34px;
+    width: 80px;
+    margin-left: -84px;
+    background-color: rgb(147, 228, 255);
+}
+
+.fotorama img{
+    width:100%;
+    max-width:600px;
+    height: 100%;
+    max-height: 750px;
+}

@@ -1,0 +1,82 @@
+html {
+    background-color: #DCC9B6;
+    color: #311C23;
+    font-family: 'Markazi Text', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-top: 96px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.21rem;
+}
+
+a {
+    text-decoration: none;
+    color: #222C28;
+}
+
+p {
+    margin-left: 50px;
+    margin-bottom: 40px;
+    max-width: 850px;
+    text-indent: 20px;
+}
+
+.image {
+    max-width: 350px;
+    max-height: 350px;
+    margin-left: 50px;
+}
+
+#navbar {
+    background-color: #b2675e;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: left;
+    font-size: 1.15rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 2500px;
+    max-height: 28px;
+}
+
+#navbar a:link {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+#navbar a:visited{
+    text-decoration: none;
+    color: #311C23;
+}
+
+#navbar a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#title-icon {
+    font-size: 1.24rem;
+    text-align: center;
+}

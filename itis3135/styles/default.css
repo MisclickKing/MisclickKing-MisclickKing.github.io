@@ -1,6 +1,6 @@
 html {
   font-family: 'Orbitron', sans-serif;
-  color: #230931;
+  color: #150e18;
 }
 body {
   background-image: url('../../itis3135/images/jungle_background.jpg');
@@ -234,4 +234,30 @@ select {
   margin-left: 45px;
   margin-top: 25px;
   margin-bottom: 45px;
+}
+
+.project-h3-title {
+  padding: 0px 50px 20px 75px;
+  margin: auto;
+  max-width: 750px;
+}
+
+.project-h3-title p {
+  text-indent: 24px;
+  max-width: 550px;
+  margin-left: 45px;
+}
+
+.project-h3-title p a {
+  color:#520f42;
+  text-decoration:underline;
+}
+
+.project-h3-title img {
+  width: 600px;
+  height: 450 px;
+}
+
+.project-h3-title h4 {
+  margin-left: 20px;
 }
